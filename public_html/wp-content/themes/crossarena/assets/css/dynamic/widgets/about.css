@@ -1,0 +1,7 @@
+.widget-about__social .menu-item a {
+	color: $regular_link_hover_color;
+}
+
+.widget-about__social .menu-item a:hover {
+	color: $regular_link_color;
+}

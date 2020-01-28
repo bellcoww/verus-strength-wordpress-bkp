@@ -1,0 +1,46 @@
+.site-header.style-2 {
+	.top-panel {
+		border: none;
+		border-bottom: 1px solid $color__background-hr;
+		.contact-block+.top-panel__container__items {
+			@include media-breakpoint-up(lg) {
+				@include before-line;
+			}
+		}
+		&__container {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			align-items: center;
+			@include media-breakpoint-up(md) {
+				flex-flow: row wrap;
+				padding-top: 7px;
+				padding-bottom: 7px;
+			}
+			@include media-breakpoint-up(lg) {
+				flex-flow: row nowrap;
+				padding-top: 0px;
+				padding-bottom: 0px;
+			}
+			&__items {
+				@include media-breakpoint-between(md, md) {
+					margin-left: auto;
+				}
+			}
+			>* {
+				@include media-breakpoint-down(sm) {
+					text-align: center;
+					margin-top: 5px;
+					margin-bottom: 5px;
+				}
+			}
+		}
+		&__message {
+			padding: 0;
+		}
+	}
+	.site-logo {
+		&--image {
+			margin-top: 0;
+		}
+	}
+}

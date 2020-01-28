@@ -1,0 +1,137 @@
+.tm-testi {
+	& &__item {
+		&.swiper-slide {
+			margin: 0;
+		}
+		&:first-child {
+			margin-top: 0;
+		}
+		.tm-testi__inner {
+			blockquote {
+				padding: 0;
+				&:before,
+				#tm_builder_outer_content &:before {
+					content: none;
+				}
+				cite {
+					margin-left: 0;
+				}
+			}
+		}
+		&-avatar {
+			display: block;
+			margin: 0 30px 0 0;
+		}
+		&-body {
+			font-size: 15px;
+			line-height: 1.4;
+			position: relative;
+		}
+		&-position,
+		&-email,
+		&-company {
+			display: block;
+			@include font-size(12/16);
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 500;
+			padding-top: 2px;
+		}
+		&-name {
+			font-weight: bold;
+		}
+		cite {
+			display: initial;
+			&:before {
+				content: none;
+			}
+		}
+		blockquote {
+			text-align: left;
+			&:before {
+				content: "\201c";
+				font-family: "Times New Roman", Times, serif;
+				display: block;
+				font-size: 72px;
+				line-height: 50px;
+				font-weight: 700;
+			}
+			.tm-testi__wrap--perview-1 &,
+			.tm-testi-page--archive & {
+				flex-direction: column;
+			}
+		}
+	}
+	&__wrap {
+		position: static;
+	}
+	&--default {
+		.tm-testi__item {
+			.avatar {
+				@include media-breakpoint-up(lg) {
+					margin: 0 35px 0 0;
+				}
+			}
+		}
+	}
+	&--default-center {
+		.tm-testi__item {
+			margin-top: 100px;
+			&:first-child {
+				margin-top: 0;
+			}
+			blockquote {
+				display: block;
+				text-align: center;
+			}
+			&-body {
+				padding: 2px 7%;
+				p {
+					margin-bottom: 16px;
+					line-height: 1.5em;
+					font-size: 17px;
+				}
+			}
+			.avatar {
+				display: block;
+				margin: 0 auto 18px;
+				@include border-radius(100%);
+			}
+			&-name {
+				text-transform: uppercase;
+			}
+			.title {
+				margin: 0;
+			}
+		}
+		.tm-testi-slider__pags.swiper-pagination{
+			&.swiper-pagination-bullets {
+				margin-top: 0;
+			}
+		}
+	}
+	&--boxed {
+		.tm-testi__item {
+			padding: 30px;
+			blockquote {
+				padding: 30px;
+				border: none;
+			}
+		}
+	}
+	&--speech-bubble {
+		.tm-testi__item {
+			margin-top: 50px;
+		}
+	}
+	.tm-testi-slider__pags.swiper-pagination {
+		position: static;
+		margin-top: 35px;
+	}
+	.swiper-button-next.tm-testi-slider__next {
+		right: 0px;
+	}
+	.swiper-button-prev.tm-testi-slider__prev {
+		left: 0px;
+	}
+}

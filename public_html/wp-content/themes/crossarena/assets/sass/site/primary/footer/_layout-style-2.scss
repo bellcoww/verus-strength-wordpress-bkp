@@ -1,0 +1,30 @@
+.site-footer.style-2 {
+	.site-info {
+		text-align: center;
+		>*+.social-list {
+			margin: 10px 0 0;
+		}
+		>*+.footer-copyright {
+			margin: 18px 0 0;
+		}
+		.footer-menu {
+			margin-top: 10px;
+		}
+	}
+	.subscribe-block {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.contact-block {
+		&__inner {
+			display: block;
+		}
+		&__item {
+			padding: 0;
+			line-height: 2;
+		}
+		&__value-wrap {
+			text-align: center;
+		}
+	}
+}

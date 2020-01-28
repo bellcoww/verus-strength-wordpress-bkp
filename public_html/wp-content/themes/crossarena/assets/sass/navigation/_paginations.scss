@@ -1,0 +1,148 @@
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+	overflow: hidden;
+	margin-bottom: 45px;
+	.nav-previous,
+	.nav-next {
+		line-height: 1;
+		width: 100%;
+		@include media-breakpoint-up(sm) {
+			width: 50%;
+		}
+		>a {
+			display: inline-block;
+			vertical-align: top;
+			text-decoration: none;
+			position: relative;
+			font-weight: 700;
+		}
+	}
+	.nav-previous,
+	.nav-next {
+		>a {
+			&:before,
+			&:after {
+				@include font-awesome-icon;
+			}
+		}
+	}
+	.nav-previous {
+		float: left;
+		padding-right: 10px;
+		>a {
+			&:before {
+				padding-right: 10px;
+				content: '\f104';
+			}
+		}
+	}
+	.nav-next {
+		float: right;
+		text-align: right;
+		padding-left: 10px;
+		>a {
+			&:after {
+				padding-left: 10px;
+				content: '\f105';
+			}
+		}
+	}
+}
+
+
+/*Post pagination*/
+
+.pagination .nav-links,
+.woocommerce nav.woocommerce-pagination {
+	text-align: left;
+	.page-numbers {
+		display: inline-block;
+		@include font-size(12/16);
+		line-height: 40px;
+		font-weight: 700;
+		text-align: center;
+		width: 40px;
+		height: 40px;
+		border: none;
+		background-color: rgba($color__background-hr, .1);
+		&.next,
+		&.prev {
+			display: none;
+		}
+	}
+}
+
+.tm-pg_front_gallery-navigation .tm_pg_nav-links a.tm_pg_page-numbers {
+	display: inline-block;
+	margin: 0 8px;
+	border: none;
+	min-width: initial;
+	height: initial;
+	line-height: initial;
+	font-style: italic;
+	text-align: center;
+	text-decoration: none;
+	&.next,
+	&.prev {
+		vertical-align: middle;
+		font-weight: 700;
+		font-style: normal;
+		border: none;
+		background: none;
+		&:before,
+		&:after {
+			@include font-awesome-icon;
+		}
+	}
+	&.next {
+		margin: 0 0 0 15px;
+		&:after {
+			content: '\f105';
+			margin-left: 8px;
+		}
+	}
+	&.prev {
+		margin: 0 15px 0 0;
+		&:before {
+			content: '\f104';
+			margin-right: 8px;
+		}
+	}
+}
+
+.site-content .page-numbers.current,
+.tm-pg_front_gallery-navigation .tm_pg_nav-links a.tm_pg_page-numbers.current {
+	font-weight: 700;
+}
+
+
+/*Page links*/
+
+.site-content .page-links {
+	clear: both;
+	margin: 4em 0 1em;
+	&__title {
+		margin-right: 5px;
+	}
+	a,
+	>.page-links__item {
+		line-height: 50px;
+		display: inline-block;
+		min-width: 50px;
+		height: 50px;
+		margin: 0 5px 5px 0;
+		padding: 0 2px;
+		text-align: center;
+		text-decoration: none;
+		border: 1px solid $color__background-hr;
+		@include font-size(.75);
+		@include border-radius;
+	}
+}
+
+.site-content .page-links a:hover,
+.site-content .page-links>.page-links__item {
+	background-color: transparent;
+	border-color: $color__background-hr;
+}

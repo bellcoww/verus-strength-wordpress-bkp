@@ -1,0 +1,138 @@
+.search-form-wrapper {
+	position: relative;
+	&.search-active {
+		.search-form {
+			left: -122px;
+			width: 230px;
+			margin-top: 10px;
+			@include media-breakpoint-up(sm) {
+				left: auto;
+				right: -11px;
+				width: 280px;
+			}
+			@include media-breakpoint-up(md) {
+				width: 350px;
+			}
+			@include media-breakpoint-up(lg) {
+				width: 520px;
+				margin-top: 0;
+			}
+			@include media-breakpoint-up(xl) {
+				right: -1px;
+			}
+		}
+	}
+	.search-form {
+		position: absolute;
+		right: -9999999999px;
+		margin: 0;
+		width: 100px;
+		z-index: 999;
+		@include media-breakpoint-up(sm) {
+			transition: width .25s ease-out;
+		}
+		&__toggle {
+			padding: 2px 10px;
+			@include media-breakpoint-up(lg) {
+				padding: 13px 10px;
+			}
+			@include media-breakpoint-up(xl) {
+				padding: 13px 18px;
+			}
+		}
+		&__input-wrap {
+			min-width: initial;
+			&:before {
+				content: '';
+				position: absolute;
+				top: -7px;
+				left: 135px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 5.5px 7px 5.5px;
+				border-color: transparent transparent $color__white transparent;
+				@include media-breakpoint-up(sm) {
+					left: auto;
+					right: 23px;
+				}
+			}
+			i {
+				display: none;
+			}
+		}
+		&__field {
+			padding: 15px 18px 17px;
+			font-weight: 400;
+			font-style: italic;
+			border: none;
+			.site-header & {
+				background-color: $color__white;
+			}
+		}
+		&__submit {
+			display: none;
+		}
+	}
+}
+
+.search-form {
+	padding: 0;
+	display: flex;
+	.header-container_wrap.container & {
+		left: $grid-gutter-width/2;
+		right: 40px;
+	}
+	&__toggle {
+		cursor: pointer;
+		transition: all .3s ease-out;
+		position: relative;
+		display: inline-block;
+		z-index: 150;
+		&:before {
+			@include font-awesome-icon;
+			@include font-size(17/16);
+			content: '\f002';
+		}
+	}
+	&__input-wrap {
+		position: relative;
+		flex: 5 1 185px;
+		min-width: 185px;
+		i {
+			pointer-events: none;
+			font-size: 14px;
+			left: 15px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.sidebar-1-4 .sidebar & {
+			@include media-breakpoint-up(md) {
+				flex: 5 1 150px;
+				min-width: 150px;
+			}
+		}
+	}
+	&__field[type='search'] {
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 100%;
+		min-width: 50px;
+		border: none;
+		background: rgba($color__background-hr, .15);
+	}
+	&__submit {
+		z-index: 1;
+		flex: 1 0 auto;
+		padding: 0 8px;
+		border-radius: 0;
+		&,
+		&:hover {
+			color: $color__white;
+		}
+		.fa {
+			@include font-size(17/16);
+		}
+	}
+}

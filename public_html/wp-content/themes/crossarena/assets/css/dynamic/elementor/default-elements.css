@@ -1,0 +1,267 @@
+/* #Layout */
+.elementor-section.elementor-section-boxed>.elementor-container {
+	max-width: $container_width{px};
+}
+
+/* #Title H1*/
+.elementor-widget-heading h1.elementor-heading-title.elementor-size-small {
+	font-size: @font_size($h1_font_size, multiple, ceil, 0.8)px;
+}
+.elementor-widget-heading h1.elementor-heading-title.elementor-size-medium {
+	font-size: $h1_font_size{px};
+}
+.elementor-widget-heading h1.elementor-heading-title.elementor-size-large {
+	font-size: @font_size($h1_font_size, multiple, ceil, 1.2)px;
+}
+.elementor-widget-heading h1.elementor-heading-title.elementor-size-xl {
+	font-size: @font_size($h1_font_size, multiple, ceil, 1.4)px;
+}
+.elementor-widget-heading h1.elementor-heading-title.elementor-size-xxl {
+	font-size: @font_size($h1_font_size, multiple, ceil, 1.6)px;
+}
+.elementor-widget-heading h1.elementor-heading-title {
+	line-height: $h1_line_height;
+}
+
+/* #Title H2*/
+.elementor-widget-heading h2.elementor-heading-title.elementor-size-small {
+	font-size: @font_size($h2_font_size, multiple, ceil, 0.8)px;
+}
+.elementor-widget-heading h2.elementor-heading-title.elementor-size-medium {
+	font-size: $h2_font_size{px};
+}
+.elementor-widget-heading h2.elementor-heading-title.elementor-size-large {
+	font-size: @font_size($h2_font_size, multiple, ceil, 1.2)px;
+}
+.elementor-widget-heading h2.elementor-heading-title.elementor-size-xl {
+	font-size: @font_size($h2_font_size, multiple, ceil, 1.4)px;
+}
+.elementor-widget-heading h2.elementor-heading-title.elementor-size-xxl {
+	font-size: @font_size($h2_font_size, multiple, ceil, 1.6)px;
+}
+.elementor-widget-heading h2.elementor-heading-title {
+	line-height: $h2_line_height;
+}
+
+/* #Title H3*/
+.elementor-widget-heading h3.elementor-heading-title.elementor-size-small {
+	font-size: @font_size($h3_font_size, multiple, ceil, 0.8)px;
+}
+.elementor-widget-heading h3.elementor-heading-title.elementor-size-medium {
+	font-size: $h3_font_size{px};
+}
+.elementor-widget-heading h3.elementor-heading-title.elementor-size-large {
+	font-size: @font_size($h3_font_size, multiple, ceil, 1.2)px;
+}
+.elementor-widget-heading h3.elementor-heading-title.elementor-size-xl {
+	font-size: @font_size($h3_font_size, multiple, ceil, 1.4)px;
+}
+.elementor-widget-heading h3.elementor-heading-title.elementor-size-xxl {
+	font-size: @font_size($h3_font_size, multiple, ceil, 1.6)px;
+}
+.elementor-widget-heading h3.elementor-heading-title {
+	line-height: $h3_line_height;
+}
+
+/* #Title H4*/
+.elementor-widget-heading h4.elementor-heading-title.elementor-size-small {
+	font-size: @font_size($h4_font_size, multiple, ceil, 0.8)px;
+}
+.elementor-widget-heading h4.elementor-heading-title.elementor-size-medium {
+	font-size: $h4_font_size{px};
+}
+.elementor-widget-heading h4.elementor-heading-title.elementor-size-large {
+	font-size: @font_size($h4_font_size, multiple, ceil, 1.2)px;
+}
+.elementor-widget-heading h4.elementor-heading-title.elementor-size-xl {
+	font-size: @font_size($h4_font_size, multiple, ceil, 1.4)px;
+}
+.elementor-widget-heading h4.elementor-heading-title.elementor-size-xxl {
+	font-size: @font_size($h4_font_size, multiple, ceil, 1.6)px;
+}
+
+/* #Title H5*/
+.elementor-widget-heading h5.elementor-heading-title.elementor-size-small {
+	font-size: @font_size($h5_font_size, multiple, ceil, 0.8)px;
+}
+.elementor-widget-heading h5.elementor-heading-title.elementor-size-medium {
+	font-size: $h5_font_size{px};
+}
+.elementor-widget-heading h5.elementor-heading-title.elementor-size-large {
+	font-size: @font_size($h5_font_size, multiple, ceil, 1.2)px;
+}
+.elementor-widget-heading h5.elementor-heading-title.elementor-size-xl {
+	font-size: @font_size($h5_font_size, multiple, ceil, 1.4)px;
+}
+.elementor-widget-heading h5.elementor-heading-title.elementor-size-xxl {
+	font-size: @font_size($h5_font_size, multiple, ceil, 1.6)px;
+}
+.elementor-widget-heading h5.elementor-heading-title {
+	line-height: $h5_line_height;
+}
+
+/* #Title H6*/
+.elementor-widget-heading h6.elementor-heading-title.elementor-size-small {
+	font-size: @font_size($h6_font_size, multiple, ceil, 0.8)px;
+}
+.elementor-widget-heading h6.elementor-heading-title.elementor-size-medium {
+	font-size: $h6_font_size{px};
+}
+.elementor-widget-heading h6.elementor-heading-title.elementor-size-large {
+	font-size: @font_size($h6_font_size, multiple, ceil, 1.2)px;
+}
+.elementor-widget-heading h6.elementor-heading-title.elementor-size-xl {
+	font-size: @font_size($h6_font_size, multiple, ceil, 1.4)px;
+}
+.elementor-widget-heading h6.elementor-heading-title.elementor-size-xxl {
+	font-size: @font_size($h6_font_size, multiple, ceil, 1.6)px;
+}
+.elementor-widget-heading h6.elementor-heading-title {
+	line-height: $h6_line_height;
+}
+
+.elementor-title {
+	font-style: $h6_font_style;
+	font-weight: $h6_font_weight;
+	font-size: @font_size($h6_font_size, multiple, ceil, 0.9)px;
+	line-height: $h6_line_height;
+	font-family: @font_family( $h6_font_family );
+	letter-spacing: $h6_letter_spacing{em};
+	color: $regular_h6_color;
+}
+@media (min-width: 992px) {
+	.elementor-title { font-size: $h6_font_size{px}; }
+}
+
+.elementor-widget-heading div.elementor-heading-title,
+.elementor-widget-heading span.elementor-heading-title,
+.elementor-widget-heading p.elementor-heading-title {
+	line-height: $body_line_height;
+}
+.elementor-widget-heading div.elementor-heading-title.elementor-size-small,
+.elementor-widget-heading span.elementor-heading-title.elementor-size-small,
+.elementor-widget-heading p.elementor-heading-title.elementor-size-small {
+	font-size: @font_size($body_font_size, multiple, ceil, 0.8)px;
+}
+.elementor-widget-heading div.elementor-heading-title.elementor-size-medium,
+.elementor-widget-heading span.elementor-heading-title.elementor-size-medium,
+.elementor-widget-heading p.elementor-heading-title.elementor-size-medium {
+	font-size: $body_font_size{px};
+}
+.elementor-widget-heading div.elementor-heading-title.elementor-size-large,
+.elementor-widget-heading span.elementor-heading-title.elementor-size-large,
+.elementor-widget-heading p.elementor-heading-title.elementor-size-large {
+	font-size: @font_size($body_font_size, multiple, ceil, 1.2)px;
+}
+.elementor-widget-heading div.elementor-heading-title.elementor-size-xl,
+.elementor-widget-heading span.elementor-heading-title.elementor-size-xl,
+.elementor-widget-heading p.elementor-heading-title.elementor-size-xl {
+	font-size: @font_size($body_font_size, multiple, ceil, 1.4)px;
+}
+.elementor-widget-heading div.elementor-heading-title.elementor-size-xxl,
+.elementor-widget-heading span.elementor-heading-title.elementor-size-xxl,
+.elementor-widget-heading p.elementor-heading-title.elementor-size-xxl {
+	font-size: @font_size($body_font_size, multiple, ceil, 1.6)px;
+}
+
+.elementor-widget-heading h1.elementor-heading-title {
+	line-height: $h1_line_height;
+}
+.elementor-widget-heading h2.elementor-heading-title {
+	line-height: $h2_line_height;
+}
+.elementor-widget-heading h3.elementor-heading-title {
+	line-height: $h3_line_height;
+}
+.elementor-widget-heading h4.elementor-heading-title {
+	line-height: $h4_line_height;
+}
+.elementor-widget-heading h5.elementor-heading-title {
+	line-height: $h5_line_height;
+}
+.elementor-widget-heading h6.elementor-heading-title {
+	line-height: $h6_line_height;
+}
+
+.elementor-widget-heading .elementor-heading-title>a {
+	color: $regular_link_color;
+}
+.elementor-widget-heading .elementor-heading-title>a:hover {
+	color: $regular_link_hover_color;
+}
+
+/* icon */
+.elementor-icon,
+.elementor-icon:hover {
+	color: $regular_accent_color_1;
+}
+
+/* icon-box */
+.elementor-widget-icon-box.elementor-view-stacked .elementor-icon {
+	color: $invert_accent_color_2;
+}
+.elementor-view-framed .elementor-icon,
+.elementor-view-framed .elementor-icon:hover {
+	color: $regular_accent_color_1;
+}
+.elementor-view-framed .elementor-icon {
+	border-color:  $regular_accent_color_1;
+}
+
+/* button */
+.elementor-widget-container .elementor-button-wrapper .elementor-button {
+	color: $invert_link_color;
+	background:  $regular_accent_color_1;
+}
+.elementor-widget-container .elementor-button-wrapper .elementor-button:hover {
+	color: $invert_link_color;
+	background:$regular_link_hover_color;
+}
+.elementor-widget-container .elementor-button-wrapper .elementor-button:focus {
+	box-shadow: 0 0 8px $regular_accent_color_1;
+}
+
+/* accordion */
+.elementor-accordion .elementor-tab-title:hover {
+	color: $regular_accent_color_1;
+}
+.elementor-accordion .elementor-tab-title.elementor-active,
+.elementor-accordion .elementor-tab-title .elementor-accordion-icon {
+	color: $regular_accent_color_1;
+}
+
+/* toggle */
+.elementor-toggle .elementor-tab-title:hover {
+	color: $regular_accent_color_1;
+}
+.elementor-toggle .elementor-tab-title.elementor-active,
+.elementor-toggle .elementor-tab-title .elementor-toggle-icon {
+	color: $regular_accent_color_1;
+}
+
+.elementor-progress-bar {
+	background-color: $regular_accent_color_1;
+}
+
+.elementor-divider-separator {
+	color: $regular_accent_color_1;
+}
+
+/*tab*/
+.elementor-widget-tabs .elementor-tab-title:hover {
+	color: $regular_accent_color_1;
+}
+.elementor-widget-tabs .elementor-tab-title.elementor-active {
+	color: $regular_accent_color_1;
+}
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tabs-wrapper .elementor-tab-title.elementor-active::before {
+	background-color: $regular_accent_color_1;
+}
+
+/* image-box */
+.elementor-widget-image-box .elementor-image-box-content a {
+	color: $regular_link_hover_color;
+}
+.elementor-widget-image-box .elementor-image-box-content a:hover {
+	color: $regular_link_color;
+}

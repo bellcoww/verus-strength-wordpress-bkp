@@ -1,0 +1,32 @@
+.subscribe-block .subscribe-block__input {
+	color: $invert_accent_color_1;
+	background-color: @alpha($invert_accent_color_1, 15%);
+}
+
+
+.widget-subscribe .widget-title {
+	color: $invert_accent_color_1;
+}
+
+.widget-subscribe .social-list a {
+	color: $invert_link_color;
+}
+.widget-subscribe .social-list a:hover {
+	color: $invert_link_hover_color;
+}
+
+.widget-subscribe .subscribe-block__submit.btn,
+.widget-subscribe .invert .btn {
+	color: $regular_link_hover_color;
+	background: $invert_accent_color_1;
+}
+
+.widget-subscribe .subscribe-block__submit.btn:hover,
+.widget-subscribe .invert .btn:hover {
+	color: $invert_accent_color_1;
+	background: $regular_accent_color_1;
+}
+
+.follow-block+.subscribe-block {
+	border-color: @alpha($invert_accent_color_1, 15);
+}

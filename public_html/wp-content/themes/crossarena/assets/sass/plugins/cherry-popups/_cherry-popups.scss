@@ -1,0 +1,89 @@
+.cherry-popup-wrapper {
+	.cherry-popup-container {
+		max-height: 100%!important;
+		@include media-breakpoint-up(sm) {
+			padding: 50px!important;
+		}
+		@include media-breakpoint-down(sm) {
+			padding: 0 0 40px!important;
+		}
+		h4 {
+			font-size: 30px;
+			@include media-breakpoint-down(sm) {
+				padding-left: 0!important;
+			}
+			&+h4 {
+				font-size: 24px;
+				text-transform: none;
+				@include media-breakpoint-down(sm) {
+					padding-left: 0!important;
+				}
+			}
+		}
+	}
+	.cherry-popup-container__inner {
+		overflow-y: visible!important;
+	}
+	.cherry-popup-subscribe {
+		margin-top: 53px;
+		@include media-breakpoint-down(sm) {
+			margin-top: 0;
+		}
+		.cherry-popup-subscribe__form {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+	}
+	.cherry-popup-subscribe__input {
+		margin-top: 6px;
+		padding: 13px 24px!important;
+		max-width: 430px;
+		margin-right: 5px;
+		@include media-breakpoint-down(sm) {
+			width: 100%;
+			max-width: none;
+		}
+	}
+	.cherry-popup-subscribe__form {
+		&.success-type span {
+			color: $color__background-body!important;
+		}
+	}
+	.cherry-popup-subscribe__input-group {
+		flex: 1 0 auto;
+		@include media-breakpoint-down(sm) {
+			display: block;
+		}
+	}
+	.cherry-popup-subscribe__submit {
+		font-size: 20px;
+		line-height: 25px;
+		margin-top: 6px;
+		padding: 13px 30px!important;
+		border-radius: 2px;
+		background-color: $color__background-body;
+		border-color: $color__background-body!important;
+		color: $color__cherry-popups;
+		box-shadow: 5px 5px 10px rgba( 0, 0, 0, .15);
+		transition: all .3s ease-out;
+		&:hover {
+			box-shadow: none;
+		}
+		@include media-breakpoint-down(sm) {
+			margin-left: 0;
+			text-align: center;
+			width: 100%;
+		}
+	}
+	.cherry-popup-show-again-check {
+		left: 22px!important;
+		bottom: 20px!important;
+		.marker {
+			background-color: $color__background-body!important;
+			margin-right: 11px!important;
+		}
+		.label {
+			color: $color__background-body;
+		}
+	}
+}

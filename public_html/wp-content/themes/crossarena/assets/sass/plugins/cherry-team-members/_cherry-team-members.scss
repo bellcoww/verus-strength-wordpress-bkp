@@ -1,0 +1,256 @@
+/* Change default indent to Cherry Team Members Grid System */
+
+.team-item {
+	padding-bottom: 45px;
+}
+
+.team-heading {
+	&_super_title,
+	&_title,
+	&_subtitle {
+		text-align: center;
+	}
+}
+
+
+/* Filters and loaders */
+
+.team-container {
+	.cherry-team-filter {
+		text-align: center;
+		.cherry-team-filter_item {
+			&:before {
+				content: none;
+			}
+		}
+	}
+}
+
+
+/* Customization Style Cherry Team Members*/
+
+.cherry-team.team-wrap .team-listing {
+	padding: 30px 0px;
+	@media screen and(max-width: 425px){
+		text-align: center;
+	}
+	.team-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-self: stretch;
+		&:after {
+			content: none;
+		}
+		.team-socials {
+			padding: 0;
+		}
+		.team-socials,
+		.btn {
+			margin-top: 15px;
+			margin-left: -12px;
+		}
+
+		@media screen and (max-width: 425px){
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.team-listing {
+		&_photo {
+			padding: 0 0 30px;
+			a {
+				display: block;
+			}
+			img {
+				vertical-align: top;
+				@media screen and (max-width: 425px){
+					padding-right: 0px;
+					width:100%;
+					padding-left: 0;
+				}
+			}
+		}
+		&_name {
+			@include font-size(18/16);
+			font-style: normal;
+			margin-top: 0;
+			margin-bottom: 18px;
+		}
+		&_position {
+			display: block;
+			.position {
+				@include font-size(12/16);
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+		}
+		&_desc {
+			margin-top: 18px;
+		}
+		&_socials {
+			.team-socials_item {
+				a {
+					width: 35px;
+					height: 35px;
+				}
+			}
+		}
+	}
+	.team-macros {
+		margin-bottom: 3px;
+		display: block;
+		@include font-size(14/16);
+		line-height: 1.6;
+	}
+	.phone,
+	.location,
+	.email {
+		&:before {
+			display: inline-block;
+			width: 18px;
+			margin-right: 12px;
+			@include font-awesome-icon;
+			font-size: 16px;
+			text-align: center;
+		}
+	}
+	.phone:before {
+		content: '\f10a';
+	}
+	.location:before {
+		content: '\f041';
+	}
+	.email:before {
+		content: '\f0e0';
+	}
+}
+.cherry-team .team-listing_name a{
+	font-weight: 700;
+}
+
+/* Grid-boxes template style */
+
+
+
+.cherry-team.team-wrap.template-grid-boxes {
+	.team-listing {
+		.team-listing {
+			&_wrap {
+				&:hover {
+					box-shadow: 8px 8px 60px rgba( 6, 30, 52, .1);
+				}
+			}
+			&_photo {
+				padding: 0;
+			}
+			&_person_info {
+				padding: 20px 0px 20px;
+			}
+		}
+		&_image {
+			position: relative;
+			overflow: hidden;
+		}
+		&_content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.team-socials_label {
+		color: #000;
+		background-color: #fff;
+		&:before {
+			border-color: #fff transparent transparent transparent;
+		}
+	}
+}
+
+
+/* List */
+
+.cherry-team.team-wrap.template-list {
+	.team-listing_wrap {
+		@include media-breakpoint-up(sm) {
+			display: flex;
+			align-items: flex-start;
+		}
+	}
+	.team-listing_image {
+		max-width: 270px;
+		flex-shrink: 0;
+		position: relative;
+		margin-right: 30px;
+		.team-listing_photo {
+			padding: 0;
+		}
+		.team-listing_content {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: rgba(0, 0, 0, .6);
+			transition: opacity 0.35s ease-in-out;
+			.team-socials {
+				margin: 0;
+			}
+		}
+		&:hover {
+			.team-listing_content {
+				opacity: 1;
+			}
+		}
+	}
+	.team-listing_person_info {
+		align-self: center;
+		.team-listing_desc,
+		.team-listing_desc p,
+		.btn {
+			display: inline;
+		}
+		.btn {
+			@include font-size(16/16);
+			padding: 0;
+			text-decoration: underline;
+			text-transform: lowercase;
+			font-weight: normal;
+			font-style: italic;
+			letter-spacing: 0;
+			background: none;
+			margin-left: 3px;
+		}
+		&__footer {
+			margin-top: 20px;
+		}
+		@media screen and (min-device-width: 425px){
+			text-align: center;
+			margin-bottom: -45px;
+		}
+	}
+	.team-socials_link {
+		color: $color__white;
+	}
+	.team-socials_label {
+		color: $color__dark;
+		background-color: $color__white;
+		&:before {
+			border-color: $color__white transparent transparent transparent;
+		}
+	}
+}
+
+
+/* Single */
+
+.team-single {
+	&-item {
+		padding: 10px 0;
+	}
+}

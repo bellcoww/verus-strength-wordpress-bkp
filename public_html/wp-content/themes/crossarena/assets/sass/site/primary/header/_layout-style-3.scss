@@ -1,0 +1,38 @@
+.site-header.style-3 {
+	.site-branding {
+		@include media-breakpoint-up(md) {
+			width: 40%;
+			margin-left: 30%;
+			text-align: center;
+		}
+	}
+	.jet-menu > .jet-menu-item {
+		@include media-breakpoint-up(lg) {
+			padding: 0 0 26px;
+		}
+	}
+	.isStuck .jet-menu > .jet-menu-item {
+		padding: 0 0 5px;
+	}
+	.header-btn.btn {
+		padding: 15px 20px;
+	}
+	.header-container {
+		&__flex {
+			@include media-breakpoint-up(md) {
+				flex-wrap: nowrap;
+			}
+		}
+		.header-btn {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		.site-branding {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+	}
+	.jet-menu {
+		justify-content: center !important;
+	}
+}

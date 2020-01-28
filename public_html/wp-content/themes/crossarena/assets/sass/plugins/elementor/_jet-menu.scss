@@ -1,0 +1,144 @@
+.jet-menu-container,
+.jet-menu {
+	position: static;
+}
+
+.jet-sub-mega-menu {
+	width: auto;
+	left: $grid-gutter-width/2;
+	right: $grid-gutter-width/2;
+}
+
+.jet-menu {
+	font-weight: 400;
+	&>&-item {
+		padding: 0 0 5px;
+		margin-left: 5px;
+		margin-right: 5px;
+		@include media-breakpoint-up(mg) {
+			padding: 0 0 15px;
+		}
+		@include media-breakpoint-up(lg) {
+			padding: 20px 0;
+		}
+		.top-level-link {
+			@media (min-width: 992px) and (max-width: 1200px) {
+				padding: 10px 2px;
+				@include font-size(15/16);
+			}
+		}
+	}
+	&-item-wrapper {
+		position: relative;
+	}
+	.top-level-link {
+		@include media-breakpoint-up(md) {
+			&:before {
+				content: '';
+				transition: width .25s ease-out;
+				position: absolute;
+				left: 0;
+				bottom: -5px;
+				width: 0;
+				height: 2px;
+			}
+		}
+		@include media-breakpoint-up(md) {
+			&:before {
+				bottom: -15px;
+			}
+		}
+		@include media-breakpoint-up(lg) {
+			&:before {
+				bottom: -26px;
+			}
+		}
+	}
+	.sub-level-link {
+		font-size: 16px;
+		.jet-dropdown-arrow {
+			position: absolute;
+			right: 0;
+		}
+	}
+	.jet-menu-hover,
+	.jet-current-menu-item,
+	.jet-current-menu-parent {
+		.top-level-link {
+			@include media-breakpoint-up(md) {
+				&:before {
+					width: 100%;
+				}
+			}
+			.jet-mobile-menu-active & {
+				background-color: rgba($color__background-hr, .1);
+			}
+		}
+	}
+	.jet-dropdown-arrow {
+		margin-top: 0;
+		margin-left: 5px;
+		font-size: 15px;
+	}
+}
+
+.jet-simple-menu-item {
+	.jet-sub-menu {
+		li {
+			border-top: 1px solid rgba($color__background-hr, .25);
+			&:first-child,
+			.jet-mobile-menu-active & {
+				border: none;
+			}
+		}
+		>li {
+			>a {
+				padding: 16px 20px;
+			}
+		}
+		.jet-menu-hover,
+		.jet-current-menu-item {
+			background-color: rgba($color__background-hr, .1);
+		}
+	}
+}
+
+.jet-custom-nav {
+	>.jet-custom-nav__item {
+		border-top: 1px solid rgba($color__background-hr, .25);
+		margin: 0;
+		&:first-child {
+			border: none;
+		}
+		>a {
+			padding: 10px 5px;
+			background-color: initial;
+		}
+	}
+}
+
+.jet-mobile-menu-active {
+	.site-header {
+		margin-top: 0;
+	}
+	.jet-menu-container.jet-mobile-menu {
+		right: -180%;
+		.jet-mobile-menu-toggle-button {
+			top: 10px;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+.jet-mobile-menu-visible.jet-mobile-menu-active {
+	.jet-menu-container.jet-mobile-menu {
+		right: -100%;
+	}
+}
+
+.jet-mobile-menu-cover {
+	z-index: 990;
+	background-color: rgba($color__dark, .5);
+}

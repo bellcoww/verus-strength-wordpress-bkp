@@ -1,0 +1,36 @@
+.site-footer.default {
+	.footer-container {
+		padding-top: 14px;
+		padding-bottom: 14px;
+		&__top,
+		&__bottom {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@include media-breakpoint-up(lg) {
+				justify-content: space-between;
+			}
+			>* {
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+		}
+		&__top {
+			.footer-copyright {
+				margin: 0 auto;
+				font-size: 15px;
+			}
+			.footer-menu + .footer-copyright {
+				padding-left: $grid-gutter-width;
+			}
+		}
+		&__bottom {
+			.contact-block {
+				margin-left: auto;
+			}
+			.footer-logo + .contact-block {
+				padding-left: $grid-gutter-width;
+			}
+		}
+	}
+}

@@ -1,0 +1,220 @@
+.widget {
+	ul {
+		margin-bottom: 0;
+		padding: 0;
+		margin-left: 0;
+		list-style: none;
+		li {
+			&+li,
+			>ul li,
+			>ol li {
+				margin-top: 6px;
+			}
+			>ul {
+				margin-left: 10px;
+			}
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------
+## Widget Categories
+--------------------------------------------------------------*/
+
+.widget_categories {
+	ul li {
+		display: block;
+	}
+}
+
+
+/*--------------------------------------------------------------
+## Widget Calendar
+--------------------------------------------------------------*/
+
+.widget_calendar {
+	table {
+		margin-bottom: 0;
+		table-layout: fixed;
+		width: 100%;
+		border-collapse: separate;
+		border-spacing: 5px;
+		border: none;
+		@include media-breakpoint-up(xl, $grid-breakpoints-old) {
+			border-spacing: 10px;
+		}
+		th,
+		td,
+		thead th,
+		tbody+tbody {
+			border: none;
+		}
+	}
+	caption {
+		margin-bottom: 13px;
+		text-align: left;
+	}
+	th {
+		text-align: center;
+		padding: 0 0 4px;
+		font-weight: inherit;
+	}
+	tbody td {
+		position: relative;
+		@include font-size(18/16);
+		padding: 0 1px;
+		text-align: center;
+		@include border-radius();
+		line-height: 34px;
+		@include media-breakpoint-up(xl, $grid-breakpoints-old) {
+			line-height: 43px;
+		}
+		a {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			@include border-radius();
+			color: inherit;
+		}
+	}
+	tfoot td {
+		padding-top: 18px;
+	}
+	#next {
+		text-align: right;
+	}
+}
+
+
+/*--------------------------------------------------------------
+## Widget Tag Cloud
+--------------------------------------------------------------*/
+
+.tagcloud {
+	margin: -1.5px;
+	font-size: 0;
+	line-height: 0;
+	a {
+		font-size: 16px !important;
+		display: inline-block;
+		margin: 1.5px;
+		padding: 15px 20px;
+		vertical-align: top;
+		text-decoration: none;
+		@include border-radius;
+	}
+}
+
+
+/*--------------------------------------------------------------
+## Widget Recent Posts
+--------------------------------------------------------------*/
+
+.widget_recent_entries,
+.elementor-widget.elementor-widget-wp-widget-recent-posts {
+	ul {
+		li {
+			&:before {
+				content: none;
+			}
+			margin: 0;
+			font-weight: 400;
+			line-height: 1.35;
+			a {
+				display: block;
+				@include font-size(16/16);
+			}
+			.post-date {
+				display: block;
+				margin-top: 5px;
+				@include font-size(14/16);
+			}
+		}
+		li + li {
+			margin-top: 27px;
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------
+## Widget Recent Comments
+--------------------------------------------------------------*/
+
+.widget_recent_comments {
+	ul li {
+		@extend .clear;
+		&+li {
+			margin-top: 19px;
+		}
+		.comment-author-link {
+			font-weight: bold;
+			&~a {
+				margin-top: 6px !important;
+				&:before {
+					content: '';
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------
+## Widget Search
+--------------------------------------------------------------*/
+
+.widget_search {
+	.search-form {
+		&__input-wrap {
+			.invert & i {
+				color: $color__white;
+			}
+		}
+	}
+}
+
+.sidebar .widget_nav_menu,
+.sidebar .widget_archive,
+.elementor-widget-wp-widget-nav_menu {
+	padding: 15px 20px 25px;
+	border-top: 7px solid rgba($color__background-hr, .25);
+	background: rgba($color__background-hr, .1);
+
+	@include media-breakpoint-up(lg) {
+		padding: 23px 40px 45px;
+	}
+}
+
+.sidebar .widget_nav_menu,
+.sidebar .widget_archive,
+.elementor-widget-wp-widget-nav_menu {
+	ul {
+		li {
+			&:before {
+				content: none;
+			}
+			a {
+				font-weight: 400;
+				&:before {
+					content: '';
+					width: 5px;
+					height: 5px;
+					border-radius: 50%;
+					display: inline-block;
+					vertical-align: middle;
+					margin-bottom: 2px;
+					margin-right: 10px;
+				}
+			}
+		}
+		li+li {
+			margin-top: 14px;
+		}
+	}
+}

@@ -1,0 +1,45 @@
+/* #Header */
+.mobile-panel {
+	background-color: $invert_accent_color_2;
+}
+.site-header {
+	background-repeat: $header_bg_repeat;
+	background-position: $header_bg_position_x top;
+	background-attachment: $header_bg_attachment;
+}
+.header-container {
+	background-color: $header_bg_color;
+}
+
+@media (min-width: 768px){
+	.header-container.stuckMenu.isStuck{
+		background-color: $header_bg_color;
+	} 
+}
+
+/* ##Logo */
+.site-logo {
+	font-style: $header_logo_font_style;
+	font-weight: $header_logo_font_weight;
+	font-size: $header_logo_font_size{px};
+	font-family: @font_family( $header_logo_font_family );
+}
+.site-logo__link,
+.site-logo__link:hover {
+	color: $regular_text_color;
+}
+
+.site-header-cart .cart-contents i {
+	color: $invert_link_color;
+}
+.site-header-cart .cart-contents:hover i {
+	color: $invert_link_hover_color;
+}
+
+.fullwidth-top-border:before {
+	background: @alpha($invert_accent_color_1, 20%);
+}
+
+.site-branding .site-description {
+	color: $invert_text_color;
+}

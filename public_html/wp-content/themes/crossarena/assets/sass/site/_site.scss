@@ -1,0 +1,83 @@
+.site {
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+	&-content {
+		flex: auto;
+		min-height: 1px;
+		.elementor-page &:not(.container) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	&-main {
+		margin-bottom: 60px;
+		.elementor-page & {
+			margin-bottom: 0;
+		}
+	}
+	&-content_wrap {
+		margin-top: 2.7em;
+		.elementor-page & {
+			margin-top: 0;
+		}
+		.single.single-post-modern & {
+			margin-top: 3em;
+			@include media-breakpoint-up(xl, $grid-breakpoints-old) {
+				margin-top: 4.5em;
+			}
+			.entry-content {
+				margin-bottom: 30px;
+			}
+		}
+		.sidebar {
+			position: relative;
+		}
+	}
+}
+
+.fullwidth-top-border {
+	position: relative;
+	@include media-breakpoint-up(md) {
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -1000%;
+			width: 2100%;
+			height: 1px;
+			background: $color__background-hr;
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------
+## Layout
+--------------------------------------------------------------*/
+
+@import "../layout/layout";
+
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+
+@import "primary/header";
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Post Formats
+--------------------------------------------------------------*/
+
+@import "primary/post-formats";
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+
+@import "primary/footer";

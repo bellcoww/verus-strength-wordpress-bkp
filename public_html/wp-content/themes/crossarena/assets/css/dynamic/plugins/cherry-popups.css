@@ -1,0 +1,21 @@
+.cherry-popup-wrapper .cherry-popup-subscribe__submit {
+	color: $invert_link_color;
+	background:  $regular_accent_color_1;
+}
+.cherry-popup-wrapper .cherry-popup-subscribe__submit:hover {
+	color: $invert_link_color;
+	background:$regular_link_hover_color;
+}
+
+.cherry-popup-wrapper .cherry-popup-close-button .dashicons:before {
+	color: $regular_accent_color_2;
+}
+
+.cherry-popup-wrapper .cherry-popup-close-button:hover .dashicons:before {
+	color: $regular_accent_color_1;
+}
+
+
+.cherry-popup-wrapper .dashicons:before{
+	color: $regular_accent_color_1;
+}

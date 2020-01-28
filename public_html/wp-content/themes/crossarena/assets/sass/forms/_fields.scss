@@ -1,0 +1,89 @@
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+select,
+textarea {
+	padding: $input__indents_y $input__indents_x;
+	line-height: 30px;
+	border: 1px solid $color__border-input;
+	color: $color__text-input;
+	&:focus {
+		outline: 0;
+	}
+}
+
+.woocommerce form .form-row .select2-selection {
+	border: 1px solid $color__border-input;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+textarea {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+input[type='file'] {
+	@include font-size(14/16);
+	line-height: 1.2143;
+	font-style: italic;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'] {
+	hyphens: none;
+}
+
+button,
+input[type='submit'],
+input[type='reset'] {
+	&:focus {
+		outline: 0;
+	}
+}
+
+select {
+	border-radius: 0;
+	border: 1px solid $color__border-input;
+	max-width: 100%;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+	min-height: 200px;
+	@include resizable(vertical);
+}
+
+::-moz-placeholder {
+	opacity: 1;
+}
+
+:-moz-placeholder {
+	opacity: 1;
+}

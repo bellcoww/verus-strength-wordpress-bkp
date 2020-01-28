@@ -1,0 +1,67 @@
+.isStuck {
+	box-shadow: $header__shadow;
+	position: static !important;
+	@include media-breakpoint-up(md) {
+		position: fixed !important;
+		z-index: 1000;
+		margin: 0 !important;
+		width: 100%;
+		left: 0;
+		right: 0;
+	}
+	&#main-menu {
+		padding: 10px 0 !important;
+		justify-content: center;
+	}
+	&.vertical-menu-toggle-holder {
+		padding: 10px 0 !important;
+		display: flex;
+		.menu-toggle {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.site-header &.header-container.stuckMenu {
+		position: static !important;
+		@include media-breakpoint-up(md) {
+			position: fixed !important;
+		}
+	}
+	&.header-container.stuckMenu {
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+
+	.jet-menu > .jet-menu-item {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		.top-level-link:before {
+			bottom: -5px;
+		}
+	}
+	&.header-container {
+		.site-branding {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		.header-btn {
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+	}
+	.header-btn.btn {
+		padding-top: 15px;
+		padding-bottom: 14px;
+	}
+}
+
+.pseudoStickyBlock {
+	@include media-breakpoint-down(sm) {
+		display: none !important;
+	}
+	width: 100%;
+	margin: 0 !important;
+	.site-header.transparent & {
+		position: absolute !important;
+	}
+}

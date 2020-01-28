@@ -1,0 +1,5 @@
+/* #Contact-information*/
+.contact-information-widget__inner li .icon {
+	color: $regular_accent_color_1;
+	border-color: $regular_accent_color_1;
+}

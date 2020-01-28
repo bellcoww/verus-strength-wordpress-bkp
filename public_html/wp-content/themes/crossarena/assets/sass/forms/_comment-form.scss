@@ -1,0 +1,54 @@
+.comment {
+	&-respond {
+		.comment-list & {
+			margin-top: 45px;
+		}
+	}
+	&-reply-title {
+		margin-bottom: 17px;
+		#cancel-comment-reply-link {
+			@include font-size(14/16);
+			font-weight: 400;
+			float: right;
+		}
+	}
+	&-form {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			border: none;
+			background-color: rgba($color__background-hr, .1);
+		}
+		&-author,
+		&-email {
+			width: calc(50% - 3px);
+		}
+		&-comment {
+			width: 100%;
+		}
+		&-comment,
+		&-author,
+		&-email {
+			position: relative;
+			margin: 0 0 6px 0;
+		}
+		.form-submit {
+			margin: 25px 0 0 0;
+			.submit {
+				padding: 24px 55px 23px;
+			}
+		}
+		&__field {
+			width: 100%;
+			vertical-align: top;
+		}
+		.logged-in-as,
+		.comment-notes {
+			width: 100%;
+			margin: 0 0 20px;
+		}
+	}
+}

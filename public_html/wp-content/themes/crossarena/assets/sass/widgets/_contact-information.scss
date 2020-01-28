@@ -1,0 +1,34 @@
+.contact-information-widget {
+	&__inner {
+		li {
+			margin-left: 0;
+			.icon {
+				flex-shrink: 0;
+				margin-right: 13px;
+				display: block;
+				height: 36px;
+				width: 36px;
+				border: 1px solid $color__background-hr;
+				border-radius: 50%;
+				@include font-size(20/16);
+				line-height: 1;
+				text-align: center;
+				&::before {
+					line-height: 35px;
+				}
+			}
+			em {
+				display: block;
+				margin-top: 4px;
+			}
+			&.contact-information__item--icon {
+				display: flex;
+			}
+		}
+	}
+	ul {
+		li+li {
+			margin-top: 10px;
+		}
+	}
+}

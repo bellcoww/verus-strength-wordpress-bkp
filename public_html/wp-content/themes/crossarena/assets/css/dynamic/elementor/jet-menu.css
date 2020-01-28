@@ -1,0 +1,35 @@
+.jet-menu .top-level-link {
+	color: $invert_accent_color_1;
+}
+
+.jet-menu .top-level-link:before {
+	background-color: $invert_accent_color_1;
+}
+
+.jet-simple-menu-item .jet-sub-menu .jet-menu-hover > a,
+.jet-simple-menu-item .jet-sub-menu .jet-current-menu-item > a {
+	color: $regular_link_color;
+}
+
+.jet-custom-nav .jet-menu-link-text,
+.jet-mobile-menu-active .jet-menu .top-level-link {
+	color: @alpha($regular_text_color, 70%);
+}
+
+.jet-mobile-menu-active .jet-menu .jet-menu-hover .top-level-link,
+.jet-mobile-menu-active .jet-menu .jet-current-menu-item .top-level-link,
+.jet-mobile-menu-active .jet-menu .jet-current-menu-parent .top-level-link,
+.jet-custom-nav .jet-menu-link-text:hover,
+.jet-custom-nav .current_page_item .jet-menu-link-text,
+.jet-custom-nav .hover-state .jet-menu-link-text {
+	color: $regular_link_color;
+}
+
+.jet-mobile-menu-toggle-button {
+	color: $invert_accent_color_1;
+	background: $regular_link_color;
+}
+.jet-mobile-menu-toggle-button:hover {
+	color: $invert_accent_color_1;
+	background: $regular_link_hover_color;
+}

@@ -1,0 +1,126 @@
+.cherry-projects-wrapper,
+.cherry-projects-terms-wrapper,
+.cherry-projects-single-post,
+.cherry-projects-single-details-list ul li {
+	color: $regular_text_color;
+}
+
+.projects-item-instance .simple-icon,
+.projects-item-instance .hover-content:before,
+.cherry-projects-single-post .featured-image a .cover,
+.cherry-projects-single-post .additional-image a .cover {
+	background-color: @alpha($invert_accent_color_2, 35);
+}
+
+.projects-item-instance .simple-icon:hover {
+	color: $invert_accent_color_1;
+	background-color: $regular_accent_color_1;
+}
+
+.cherry-projects-single-skills-list .cherry-skill-item .skill-bar span,
+.cherry-projects-wrapper .cherry-spinner-double-bounce .cherry-double-bounce1,
+.cherry-projects-wrapper .cherry-spinner-double-bounce .cherry-double-bounce2,
+.cherry-projects-terms-wrapper .cherry-spinner-double-bounce .cherry-double-bounce1,
+.cherry-projects-terms-wrapper .cherry-spinner-double-bounce .cherry-double-bounce2 {
+	background-color: $regular_accent_color_1;
+}
+
+.projects-container:not(.list-layout) .projects-item .project-entry-title a {
+	color: $invert_link_color;
+}
+.projects-container:not(.list-layout) .projects-item .project-entry-title a:hover {
+	color: @darken($invert_link_hover_color, 10%);
+}
+
+.cherry-projects-wrapper .projects-filters,
+.projects-terms-container .post-count {
+	font-style: $h5_font_style;
+	font-weight: $h5_font_weight;
+	line-height: $h5_line_height;
+	font-family: @font_family( $h5_font_family );
+	text-transform: $h5_text_transform;
+}
+
+.projects-terms-container .post-count {
+	letter-spacing: $h6_letter_spacing{em};
+}
+
+.projects-container:not(.list-layout) .projects-item .post-terms,
+.projects-container:not(.list-layout) .projects-item .post-terms a {
+	color: @alpha($invert_link_color, 65%);
+}
+.projects-container:not(.list-layout) .projects-item .post-terms a:hover {
+	color: $invert_link_color;
+}
+
+.projects-container.list-layout .projects-item .post-terms,
+.projects-container.list-layout .projects-item .post-terms a {
+	color: $regular_link_hover_color;
+}
+.projects-container.list-layout .projects-item .post-terms a:hover {
+	color: $regular_link_color;
+}
+
+.cherry-projects-wrapper .projects-filters {
+	color: $regular_link_hover_color;
+}
+
+.invert .cherry-projects-wrapper .projects-filters {
+	color: $invert_text_color;
+}
+
+
+.cherry-projects-wrapper ul.projects-filters-list li.active span,
+.cherry-projects-wrapper ul.projects-filters-list li span:hover,
+.cherry-projects-wrapper ul.order-filters > li span.current,
+.cherry-projects-wrapper ul.order-filters > li ul.orderby-list li:hover span{
+	color: $regular_link_color;
+}
+
+.projects-pagination ul.page-link li span,
+.projects-pagination .page-navigation span {
+	color: @darken($regular_accent_color_2, 15%);
+}
+
+.projects-pagination ul.page-link li:hover span,
+.projects-pagination ul.page-link li.active span,
+.projects-pagination .page-navigation span:hover {
+	color: $invert_accent_color_1;
+	background-color: $regular_accent_color_1;
+}
+
+.elementor-page.content-layout-fullwidth .cherry-projects-single__media,
+.elementor-page.content-layout-fullwidth .cherry-projects-single__header,
+.elementor-page.content-layout-fullwidth .cherry-projects-single__additional {
+	max-width: $container_width{px};
+}
+
+.cherry-projects-single .cherry-projects-single-skills-list .cherry-skill-item .skill-bar {
+	background-color: $grey_color_1;
+}
+
+.cherry-projects-single .cherry-projects-single-skills-list .cherry-skill-item .skill-label,
+.cherry-projects-single .cherry-projects-single-skills-list .cherry-skill-item .skill-bar span em {
+	font-style: $h6_font_style;
+	font-weight: $h6_font_weight;
+	font-size: $h6_font_size{px};
+	line-height: $h6_line_height;
+	font-family: @font_family( $h6_font_family );
+	letter-spacing: $h6_letter_spacing{em};
+	text-transform: $h6_text_transform;
+	color: $regular_h6_color;
+}
+
+.cherry-projects-slider__instance .slider-pro .sp-full-screen-button:before {
+	color: $regular_accent_color_1;
+}
+
+.cherry-projects-slider__instance .slider-pro .sp-arrows .sp-arrow:before,
+.cherry-projects-slider__instance .slider-pro .sp-arrows .sp-arrow:after {
+	background-color: $regular_accent_color_1;
+}
+
+.projects-ajax-button-wrapper .projects-ajax-button span {
+	color: $invert_link_color;
+	background:  $regular_accent_color_1;
+}

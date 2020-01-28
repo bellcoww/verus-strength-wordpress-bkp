@@ -1,0 +1,38 @@
+/* #Footer */
+.site-footer {
+	background-color: $footer_bg;
+}
+.site-footer a {
+	color: $invert_link_color;
+}
+.site-footer a:hover {
+	color: @alpha($invert_link_color, 40%);
+}
+.footer-area-wrap,
+.footer-social-wrap {
+	background-color: $footer_widgets_bg;
+}
+.footer-container .footer-copyright span {
+	color: $invert_accent_color_1;
+}
+.footer-container .footer-copyright span em {
+	color: $regular_accent_color_1;
+}
+.footer-container .contact-block__label {
+	color: $invert_accent_color_1;
+}
+
+.footer-social-wrap .subscribe-block__input {
+	background-color: @alpha($invert_accent_color_1, 7.5%);
+}
+.invert.footer-container,
+.invert.footer-social-wrap {
+	border-color: @alpha($invert_accent_color_1, 15%);
+}
+.invert.footer-social-wrap .subscribe-block__input {
+	color: $invert_accent_color_1;
+}
+.invert.footer-social-wrap .page-preloader {
+	border-top-color: $invert_accent_color_1;
+	border-right-color: $invert_accent_color_1;
+}

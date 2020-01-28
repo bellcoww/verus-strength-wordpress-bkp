@@ -1,0 +1,38 @@
+.site-header.default {
+	.contact-block--header {
+		width: 100%;
+		.contact-block__inner {
+			justify-content: space-between;
+		}
+	}
+	.site-branding {
+		@include media-breakpoint-up(md) {
+			margin-right: auto;
+		}
+	}
+	.main-navigation {
+		@include media-breakpoint-up(md) {
+			.menu {
+				justify-content: flex-end;
+			}
+		}
+	}
+	.header-container__flex {
+		@include media-breakpoint-between(md, md) {
+			.site-branding {
+				order: 1;
+			}
+			.header-btn {
+				order: 2;
+			}
+			.header-nav-wrapper {
+				order: 3;
+			}
+		}
+	}
+}
+.site-header.default.transparent {
+	.header-container {
+		background-color: transparent;
+	}
+}

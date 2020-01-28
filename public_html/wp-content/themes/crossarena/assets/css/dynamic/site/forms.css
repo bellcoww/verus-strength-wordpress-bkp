@@ -1,0 +1,147 @@
+/* #Fields */
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+select,
+textarea {
+	
+}
+
+.invert input[type='text'],
+.invert input[type='email'],
+.invert input[type='url'],
+.invert input[type='password'],
+.invert input[type='search'],
+.invert input[type='number'],
+.invert input[type='tel'],
+.invert input[type='range'],
+.invert input[type='date'],
+.invert input[type='month'],
+.invert input[type='week'],
+.invert input[type='time'],
+.invert input[type='datetime'],
+.invert input[type='datetime-local'],
+.invert input[type='color'],
+.invert select,
+.invert textarea {
+	color: $invert_text_color;
+	/*background: transparent;*/
+}
+
+
+
+/* #Search Form */
+.search-form__toggle {
+	color: $invert_link_color;
+}
+.search-form__toggle:hover {
+	color: $invert_link_hover_color;
+}
+.invert .search-form__field {	color: $invert_text_color; }
+.invert .search-form__field::-webkit-input-placeholder { color: $invert_text_color; }
+.invert .search-form__field::-moz-placeholder { color: $invert_text_color; }
+.invert .search-form__field:-moz-placeholder { color: $invert_text_color; }
+.invert .search-form__field:-ms-input-placeholder { color: $invert_text_color; }
+
+/* #Comment, Contact, Password Forms */
+[class^="comment-form-"] i{
+	color: @lighten($regular_text_color, 25%);
+}
+.comment-form .submit,
+.wpcf7-submit,
+.post-password-form label + input {
+	background-color: $regular_accent_color_1;
+	border-color: $regular_accent_color_1;
+}
+.comment-form .submit:hover,
+.wpcf7-submit:hover,
+.post-password-form label + input:hover {
+	background-color: $regular_accent_color_2;
+	border-color: $regular_accent_color_2;
+}
+.comment-form .submit:active,
+.wpcf7-submit:active,
+.post-password-form label + input:active {
+	box-shadow: 0 0 10px $regular_accent_color_2;
+}
+.wpcf7-form label>span {
+	color: $regular_accent_color_1;
+}
+.invert .wpcf7 .box-input input[type='submit'] {
+	color: $regular_link_hover_color;
+	background: $invert_accent_color_1;
+}
+.invert .wpcf7 .box-input input[type='submit']:hover {
+	color: $invert_accent_color_1;
+	background: $regular_link_color;
+}
+
+/* #Input Placeholders */
+::-webkit-input-placeholder { color: $regular_accent_color_2; }
+::-moz-placeholder          { color: $regular_accent_color_2; }
+:-moz-placeholder           { color: $regular_accent_color_2; }
+:-ms-input-placeholder      { color: $regular_accent_color_2; }
+
+.invert ::-webkit-input-placeholder {color:$invert_accent_color_1;}
+.invert ::-moz-placeholder          {color:$invert_accent_color_1;}
+.invert :-moz-placeholder           {color:$invert_accent_color_1;}
+.invert :-ms-input-placeholder      {color:$invert_accent_color_1;}
+
+.comment-form__field::-webkit-input-placeholder {color:$regular_text_color;}
+.comment-form__field::-moz-placeholder          {color:$regular_text_color;}
+.comment-form__field:-moz-placeholder           {color:$regular_text_color;}
+.comment-form__field:-ms-input-placeholder      {color:$regular_text_color;}
+
+.invert .comment-form__field::-webkit-input-placeholder {color:$regular_text_color;}
+.invert .comment-form__field::-moz-placeholder          {color:$regular_text_color;}
+.invert .comment-form__field:-moz-placeholder           {color:$regular_text_color;}
+.invert .comment-form__field:-ms-input-placeholder      {color:$regular_text_color;}
+
+
+.invert .search-field.search-form__field::-webkit-input-placeholder {color:$invert_accent_color_1;}
+.invert .search-field.search-form__field::-moz-placeholder          {color:$invert_accent_color_1;}
+.invert .search-field.search-form__field:-moz-placeholder           {color:$invert_accent_color_1;}
+.invert .search-field.search-form__field:-ms-input-placeholder      {color:$invert_accent_color_1;}
+
+.invert .comment-form__field::-webkit-input-placeholder {color:$invert_accent_color_1;}
+.invert .comment-form__field::-moz-placeholder          {color:$invert_accent_color_1;}
+.invert .comment-form__field:-moz-placeholder           {color:$invert_accent_color_1;}
+.invert .comment-form__field:-ms-input-placeholder      {color:$invert_accent_color_1;}
+
+
+/* .wpcf7 */
+.wpcf7 select option {
+	color: $regular_text_color;
+}
+.invert .wpcf7-form-control {
+	color: $invert_accent_color_1;
+	border-color: @alpha($invert_accent_color_1, 30%);
+}
+.invert .wpcf7-form-control:focus {
+	border-color: $invert_accent_color_1;
+}
+
+.invert .wpcf7-form p i {
+	color: $invert_accent_color_1;
+}
+
+.invert .wpcf7 .wpcf7-form-control.wpcf7-submit {
+	color: $invert_text_color;
+	background-color: $invert_accent_color_2;
+}
+.invert .wpcf7 .wpcf7-form-control.wpcf7-submit:hover {
+	color: $regular_h1_color;
+	background-color: $invert_text_color;
+}

@@ -1,0 +1,85 @@
+input[type='submit'] {
+	color: $color__white;
+	padding-top: 17px;
+	padding-bottom: 16px;
+}
+
+// General styles
+button,
+a.button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'],
+.btn,
+.elementor-widget-container .elementor-button {
+	@include btn;
+	font-weight: 700;
+	box-shadow: $button__box-shadow;
+	border: none;
+	&__text,
+	&__icon {
+		display: inline-block;
+		vertical-align: top;
+	}
+	&.btn-fullwidth {
+		width: 100%;
+		text-align: center;
+	}
+	&:hover {
+		box-shadow: none;
+	}
+	&:active {
+		outline: 0;
+	}
+}
+
+.btn,
+.btn-defaul,
+.btn-primary,
+.btn-secondary,
+.btn:hover,
+.btn-defaul:hover,
+.btn-primary:hover,
+.btn-secondary:hover,
+.cta-form_submit,
+.cta-form_submit:hover,
+.cta-button,
+.cta-button:hover,
+.invert .btn,
+.invert .btn-primary,
+.invert .btn-secondary,
+.invert .btn-default,
+.error-404 .btn-secondary .invert .btn:hover,
+.invert .btn-primary:hover,
+.invert .btn-secondary:hover,
+.invert .btn-default:hover,
+.error-404 .btn-secondary:hover {
+	color: #333333;
+}
+
+.link {
+	display: inline-block;
+	letter-spacing: 0.72px;
+	text-transform: uppercase;
+	@include font-size(.75);
+	line-height: 1.5;
+	font-weight: 600;
+	i {
+		font-size: 14px;
+		line-height: 18px;
+		margin-left: 5px;
+	}
+}
+
+.header-btn.btn {
+	&,
+	&:focus {
+		background: none;
+		box-shadow: none;
+	}
+	padding: 21px 30px 19px;
+	border: 1px solid $color__background-hr;
+	@media (max-width: 1200px) {
+		padding: 15px 10px 14px;
+	}
+}

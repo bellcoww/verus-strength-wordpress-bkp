@@ -1,0 +1,12 @@
+.site-header.style-2 {
+	.header-container__flex {
+		@include media-breakpoint-between(md, md) {
+			.header-nav-wrapper {
+				order: 3;
+			}
+		}
+	}
+	.top-panel {
+		padding: 13px 0;
+	}
+}

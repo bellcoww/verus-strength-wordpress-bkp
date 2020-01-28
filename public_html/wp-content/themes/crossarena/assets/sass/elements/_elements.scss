@@ -1,0 +1,158 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body;
+	/* Fallback for when there is no custom background color defined. */
+}
+
+img {
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+	vertical-align: top;
+}
+
+blockquote,
+q {
+	quotes: none;
+	&:before,
+	&:after {
+		content: '';
+	}
+}
+
+blockquote {
+	position: relative;
+	margin: 0;
+	padding: 10px 45px 10px 45px;
+	font-style: italic;
+	quotes: "\201c" "";
+	&:before {
+		content: open-quote;
+		position: absolute;
+		font-size: 100px;
+		line-height: .5;
+		font-weight: 700;
+		left: -20px;
+		top: 30px;
+	}
+	p {
+		margin: 0;
+	}
+	h4 {
+		max-width: 500px;
+		.page .entry-content & {
+			margin-top: 0;
+		}
+	}
+	h6 {
+		.page .entry-content & {
+			margin-top: 15px;
+		}
+		.single & {
+			margin-top: 17px;
+		}
+	}
+	q {
+		font-style: italic;
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+	cite {
+		display: block;
+		margin-top: 15px;
+		&:before {
+			content: '—';
+			display: inline-block;
+			margin-right: 5px;
+			font-weight: normal;
+		}
+		span {
+			font-weight: 400;
+			margin-right: 3px;
+		}
+	}
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin: 45px 0;
+	clear: both;
+}
+
+
+
+/* gradient plane with opacity */
+
+.gradient-plane {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		opacity: .9;
+	}
+}
+
+.rectangle {
+	position: absolute;
+	width: 490px;
+	height: 490px;
+	top: 85px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: transparent;
+	border: 9px solid;
+	@include media-breakpoint-down(md) {
+		width: 85%;
+		height: 340px;
+	}
+	@include media-breakpoint-down(sm) {
+		height: 450px;
+	}
+	@include media-breakpoint-down(xs) {
+		height: 250px;
+	}
+}
+
+
+/*--------------------------------------------------------------
+## Lists
+--------------------------------------------------------------*/
+
+@import "lists";
+
+/*--------------------------------------------------------------
+## Tables
+--------------------------------------------------------------*/
+
+@import "tables";
+
+/*--------------------------------------------------------------
+## Preloader
+--------------------------------------------------------------*/
+
+@import "page-preloader";
+
+/*--------------------------------------------------------------
+## ToTop button
+--------------------------------------------------------------*/
+
+@import "totop-button";

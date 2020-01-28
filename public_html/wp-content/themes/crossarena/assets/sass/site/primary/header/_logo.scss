@@ -1,0 +1,18 @@
+.site-logo {
+	margin: 0;
+	line-height: 1;
+	&--image {
+		@include media-breakpoint-up(lg) {
+			margin-top: 6px;
+		}
+	}
+	&__link {
+		text-decoration: none;
+		line-height: 1;
+	}
+}
+
+.site-description {
+	font-size: 10px;
+	letter-spacing: 1px;
+}

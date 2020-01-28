@@ -1,0 +1,16 @@
+.top-panel__menu {
+	padding: 7px 0;
+	border-bottom: 1px solid $color__background-hr;
+	&-list {
+		margin: 0 auto;
+		.menu-item {
+			margin: .25em 7px;
+			&:first-child {
+				margin-left: 0;
+			}
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}

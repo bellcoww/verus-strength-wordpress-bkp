@@ -1,0 +1,79 @@
+.embed-responsive {
+	position: relative;
+	display: block;
+	padding: 0;
+	.embed-responsive-item,
+	iframe,
+	embed,
+	object {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		border: 0;
+	} // Modifier class for 16:9 aspect ratio
+	&.embed-responsive-16by9 {
+		padding-bottom: $embed__ratio;
+		.posts-list--grid-3-cols &,
+		.posts-list--vertical-justify & {
+			padding-bottom: 75.5%;
+		}
+	} // Modifier class for 4:3 aspect ratio
+	&.embed-responsive-4by3 {
+		padding-bottom: 75%;
+	}
+}
+
+
+/* Audio */
+
+.entry-content .mejs-container-wrapper {
+	margin-bottom: 1em;
+}
+
+.wp-playlist.wp-audio-playlist {
+	padding: 20px;
+	@include border-radius($border__radius);
+}
+
+.wp-playlist.wp-audio-playlist.wp-playlist-light {
+	.wp-playlist-item {
+		border-bottom-color: $color__background-hr;
+		&.wp-playlist-playing .wp-playlist-caption {
+			color: $color__dark;
+		}
+	}
+}
+
+.wp-playlist.wp-audio-playlist {
+	.wp-playlist-current-item {
+		margin-bottom: 15px;
+	}
+	.wp-playlist-tracks {
+		margin-top: 15px;
+	}
+}
+
+
+/* Video */
+
+.wp-video,
+.wp-playlist.wp-video-playlist {
+	margin-bottom: 40px;
+}
+
+.wp-video .mejs-poster {
+	background-size: cover;
+}
+
+
+/* Facebook embed */
+
+.fb_iframe_widget {
+	max-width: 100%;
+	>span {
+		max-width: 100%;
+	}
+}

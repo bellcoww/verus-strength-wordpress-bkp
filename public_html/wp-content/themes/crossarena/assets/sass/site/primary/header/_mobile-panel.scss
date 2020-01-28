@@ -1,0 +1,42 @@
+.mobile-panel {
+	visibility: visible;
+	position: fixed;
+	z-index: 998;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 11px $grid-gutter-width/2;
+	height: 52px;
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.site-header & {
+		.search-form__toggle {
+			margin-top: 0;
+		}
+	}
+	.main-menu-toggle {
+		background: none;
+		box-shadow: none;
+	}
+	.admin-bar & {
+		top: 46px;
+		@media (max-width: 768px) {
+			position: absolute;
+		}
+	}
+	.site-header-cart {
+		@include media-breakpoint-down(sm) {
+			margin-right: 5px;
+			margin-top: 2px;
+		}
+	}
+	@include media-breakpoint-up(md) {
+		display: none;
+		visibility: hidden;
+		left: -999em;
+		height: 0;
+	}
+}

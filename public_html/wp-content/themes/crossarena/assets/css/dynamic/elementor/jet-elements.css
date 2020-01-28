@@ -1,0 +1,186 @@
+/*circle-progress*/
+.elementor-circle-progress .circle-val {
+	font-size: 40px;
+	font-weight: 700;
+	color: $regular_accent_color_1;
+}
+
+/*pricing-table*/
+.pricing-table__subtitle {
+	font-style: $body_font_style;
+	font-weight: $body_font_weight;
+	font-size: $body_font_size{px};
+	line-height: $body_line_height;
+	font-family: $body_font_family;
+	letter-spacing: $body_letter_spacing{px};
+}
+.pricing-table__icon,
+.pricing-table__subtitle,
+.pricing-table__price-prefix,
+.pricing-table__price-val {
+	color: $regular_accent_color_1;
+}
+.pricing-table__price-suffix {
+	color: $regular_link_color;
+}
+
+.pricing-table.featured-table {
+	background-color: $regular_accent_color_1;
+}
+.featured-table .pricing-table__icon,
+.featured-table .pricing-table__title,
+.featured-table .pricing-table__subtitle,
+.featured-table .pricing-table__price-prefix,
+.featured-table .pricing-table__price-suffix,
+.featured-table .pricing-table__price-val,
+.featured-table .pricing-feature {
+	color: $invert_accent_color_1;
+}
+.featured-table .pricing-table-button {
+	color: $regular_accent_color_1;
+	background-color: $invert_accent_color_1;
+}
+.featured-table .pricing-table-button:hover,
+.featured-table .pricing-table-button:focus {
+	color: $invert_accent_color_1;
+	background-color: @alpha($invert_accent_color_1, 50%);
+}
+.featured-table .pricing-table__features {
+	border-color: @darken($regular_accent_color_1, 5%);
+}
+
+/* jet-posts */
+.jet-posts .entry-title a {
+	color: $regular_link_color;
+}
+.jet-posts .entry-title a:hover {
+	color: $regular_link_hover_color;
+}
+.jet-posts .post-meta {
+	color: @darken($regular_accent_color_2, 15%);
+}
+.jet-posts .post-meta a {
+	color: $regular_accent_color_1;
+}
+.jet-posts .post-meta a:hover {
+	color: $regular_link_hover_color;
+}
+.invert .jet-posts .post-meta a {
+	color: $invert_accent_color_1;
+}
+.invert .jet-posts .post-meta a:hover {
+	color: $invert_link_hover_color;
+}
+.invert .jet-posts .entry-title a {
+	color: $regular_link_color;
+}
+.jet-posts .entry-title a:hover {
+	color: $invert_link_color;
+}
+
+/* jet-countdown-timer */
+.jet-countdown-timer {
+	color: $regular_accent_color_1;
+}
+
+.jet-carousel .jet-arrow {
+	color: $regular_link_color;
+}
+.jet-carousel .jet-arrow:hover {
+	color: $regular_link_hover_color;
+}
+
+/* jet-slider */
+.jet-slider .sp-arrow {
+	color: $invert_accent_color_1;
+}
+.jet-slider .sp-arrow:hover {
+	color: $regular_accent_color_1;
+}
+
+/*for jet-button*/
+.jet-button__instance .jet-button__state .jet-button__label {
+	font-weight: $h5_font_weight;
+}
+.jet-button__instance .jet-button__plane-normal {
+	background-color: $regular_accent_color_1;
+}
+.jet-button__instance .jet-button__plane-hover {
+	background-color: $regular_accent_color_3;
+}
+.invert .jet-button__instance .jet-button__plane-normal {
+	background-color: $invert_accent_color_2;
+}
+.invert .jet-button__instance .jet-button__state-normal .jet-button__label {
+	color: $invert_accent_color_1;
+}
+.invert .jet-button__instance .jet-button__plane-hover {
+	background-color: $invert_accent_color_1;
+}
+.invert .jet-button__instance .jet-button__state-hover .jet-button__label {
+	color: $regular_h1_color;
+}
+
+/*for jet-headline*/
+.jet-headline .jet-headline__label {
+	color: $regular_h2_color;
+}
+.invert .jet-headline .jet-headline__label {
+	color: $invert_h2_color;
+}
+.jet-headline__first .jet-headline__label {
+	font-weight: $h2_font_weight;
+}
+.jet-headline__second .jet-headline__label {
+	font-weight: $h1_font_weight;
+}
+.jet-headline__deco-icon i {
+	color: $regular_accent_color_3;
+}
+
+
+.invert .jet-headline__first .jet-headline__label {
+	color: $invert_accent_color_1;
+}
+.invert .jet-headline__second .jet-headline__label {
+	color: $invert_accent_color_2;
+}
+
+/*for jet-team*/
+.jet-team-member .jet-team-member__name-first,
+.jet-team-member .jet-team-member__name-last {
+	font-family: @font_family( $h4_font_family );
+	font-weight: $h4_font_weight;
+font-size: $h3_font_size{px};
+}
+.jet-team-member .jet-team-member__position {
+	font-family: @font_family( $h4_font_family );
+	font-weight: $h6_font_weight;
+}
+.invert .jet-team-member .jet-team-member__name-first,
+.invert .jet-team-member .jet-team-member__name-last,
+.invert .jet-team-member .jet-team-member__position,
+.invert .jet-team-member__socials-icon:hover i,
+.invert .jet-team-member__desc {
+	color: $invert_text_color;
+}
+.invert .jet-team-member__socials-icon i {
+	color: $regular_h2_color;
+}
+.invert .jet-team-member__socials-icon .inner {
+	background-color: $invert_text_color;
+	border-color: $invert_text_color;
+}
+.invert .jet-team-member__socials-icon:hover .inner,
+.jet-team-member__inner {
+	background-color: $regular_accent_color_1;
+}
+
+.jet-team-member .jet-team-member__image:before {
+	background-color: @darken($regular_accent_color_1, 35%);
+}
+
+/*for jet-map*/
+.jet-map {
+	color: $regular_text_color;
+}

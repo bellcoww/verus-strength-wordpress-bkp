@@ -1,0 +1,56 @@
+[28-Jan-2020 02:12:59 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2346
+[28-Jan-2020 02:12:59 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2347
+[28-Jan-2020 02:12:59 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2350
+[28-Jan-2020 02:12:59 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2351
+[28-Jan-2020 02:12:59 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2352
+[28-Jan-2020 02:12:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function is_rtl() on null in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php:2355
+Stack trace:
+#0 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-hook.php(288): wp_localize_jquery_ui_datepicker('')
+#1 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 /home/customer/www/verusstrength.com/public_html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php(2670): do_action('wp_enqueue_scri...')
+#4 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-customize-manager.php(455): wp_enqueue_scripts()
+#5 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-customize-manager.php(552): WP_Customize_Manager->wp_die(0, 'Non-existent ch...')
+#6 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-hook.php(288): WP_Customize_Manager->s in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2355
+[28-Jan-2020 02:13:26 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2346
+[28-Jan-2020 02:13:26 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2347
+[28-Jan-2020 02:13:26 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2350
+[28-Jan-2020 02:13:26 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2351
+[28-Jan-2020 02:13:26 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2352
+[28-Jan-2020 02:13:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function is_rtl() on null in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php:2355
+Stack trace:
+#0 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-hook.php(288): wp_localize_jquery_ui_datepicker('')
+#1 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 /home/customer/www/verusstrength.com/public_html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php(2670): do_action('wp_enqueue_scri...')
+#4 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-customize-manager.php(455): wp_enqueue_scripts()
+#5 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-customize-manager.php(552): WP_Customize_Manager->wp_die(0, 'Non-existent ch...')
+#6 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-hook.php(288): WP_Customize_Manager->s in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2355
+[28-Jan-2020 02:13:40 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2346
+[28-Jan-2020 02:13:40 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2347
+[28-Jan-2020 02:13:40 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2350
+[28-Jan-2020 02:13:40 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2351
+[28-Jan-2020 02:13:40 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2352
+[28-Jan-2020 02:13:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function is_rtl() on null in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php:2355
+Stack trace:
+#0 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-hook.php(288): wp_localize_jquery_ui_datepicker('')
+#1 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 /home/customer/www/verusstrength.com/public_html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php(2670): do_action('wp_enqueue_scri...')
+#4 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-customize-manager.php(455): wp_enqueue_scripts()
+#5 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-customize-manager.php(552): WP_Customize_Manager->wp_die(0, 'Non-existent ch...')
+#6 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-hook.php(288): WP_Customize_Manager->s in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2355
+[28-Jan-2020 02:14:20 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2346
+[28-Jan-2020 02:14:20 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2347
+[28-Jan-2020 02:14:20 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2350
+[28-Jan-2020 02:14:20 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2351
+[28-Jan-2020 02:14:20 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2352
+[28-Jan-2020 02:14:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function is_rtl() on null in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php:2355
+Stack trace:
+#0 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-hook.php(288): wp_localize_jquery_ui_datepicker('')
+#1 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 /home/customer/www/verusstrength.com/public_html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php(2670): do_action('wp_enqueue_scri...')
+#4 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-customize-manager.php(455): wp_enqueue_scripts()
+#5 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-customize-manager.php(552): WP_Customize_Manager->wp_die(0, 'Non-existent ch...')
+#6 /home/customer/www/verusstrength.com/public_html/wp-includes/class-wp-hook.php(288): WP_Customize_Manager->s in /home/customer/www/verusstrength.com/public_html/wp-includes/script-loader.php on line 2355

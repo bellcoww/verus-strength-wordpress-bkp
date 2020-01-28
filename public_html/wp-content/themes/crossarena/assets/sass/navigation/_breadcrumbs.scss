@@ -1,0 +1,29 @@
+.breadcrumbs {
+	position: relative;
+	padding: 44px 0;
+	.row {
+		justify-content: space-between;
+		align-items: center;
+	}
+	.page-title {
+		margin: 0;
+	}
+	&__title,
+	&__items {
+		padding-left: $grid-gutter-width/2;
+		padding-right: $grid-gutter-width/2;
+		width: 100%;
+	}
+	&__browse {
+		margin-right: .5em;
+	}
+	&__item {
+		display: inline-block;
+		&-sep {
+			margin: 0 5px;
+		}
+		&-link {
+			text-decoration: none;
+		}
+	}
+}

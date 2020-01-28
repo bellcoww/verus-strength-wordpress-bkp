@@ -1,0 +1,61 @@
+.swiper {
+	&-pagination-bullets {
+		position: absolute;
+		.swiper-container.swiper-container-horizontal & {
+			bottom: 20px;
+		}
+		.posts-list:not(.posts-list--default) .post-gallery .swiper-container.swiper-container-horizontal &,
+		.posts-list--default.featured-image--small .post-gallery .swiper-container.swiper-container-horizontal & {
+			bottom: 15px;
+		}
+		.widget-carousel &,
+		.tm_pb_swiper & {
+			position: static;
+		}
+	}
+	&-pagination-bullet {
+		width: 14px;
+		height: 14px;
+		background: none;
+		border: 2px solid $color__background-hr;
+		opacity: 1;
+		transition: .3s;
+		.swiper-container.swiper-container-horizontal & {
+			margin: 0 9px;
+		}
+	}
+	&-button-next,
+	&-button-prev {
+		top: 50%;
+		width: 19px;
+		height: 35px;
+		margin: -10px 0 0 0;
+		opacity: .7;
+		.widget-carousel &,
+		.post-gallery & {
+			display: none;
+		}
+		&.swiper-button-disabled {
+			pointer-events: auto;
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}
+	&-button-next,
+	&-container.swiper-container-rtl .swiper-button-prev {
+		right: 20px;
+		background: url('./assets/images/swiper-next-icon.png') !important;
+		.post-gallery & {
+			right: 30px;
+		}
+	}
+	&-button-prev,
+	&-container.swiper-container-rtl .swiper-button-next {
+		left: 20px;
+		background: url('./assets/images/swiper-prev-icon.png') !important;
+		.post-gallery & {
+			left: 30px;
+		}
+	}
+}

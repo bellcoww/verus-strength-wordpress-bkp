@@ -1,0 +1,69 @@
+/* #Elements */
+blockquote {
+	font-weight: $h4_font_weight;
+	font-size: $h4_font_size{px};
+	line-height: $h4_line_height;
+	font-family: @font_family( $h4_font_family );
+	letter-spacing: $h4_letter_spacing{em};
+	color: $regular_text_color;
+}
+.invert blockquote {
+	color: $invert_text_color;
+}
+blockquote:before {
+	color: $regular_accent_color_1;
+}
+blockquote cite {
+	font-style: $h6_font_style;
+	font-weight: $h6_font_weight;
+	font-size: $h6_font_size{px};
+	line-height: $h6_line_height;
+	font-family: @font_family( $h6_font_family );
+	letter-spacing: $h6_letter_spacing{em};
+	color: $regular_h6_color;
+}
+
+.invert blockquote cite {
+	color: $invert_h6_color;
+}
+
+.single-format-quote blockquote:before,
+.single-format-quote blockquote cite {
+	color: $regular_accent_color_1;
+}
+
+code {
+	color: $invert_accent_color_1;
+	background-color: $regular_accent_color_1;
+	font-family: @font_family( $body_font_family );
+}
+
+.dropcaps {
+	font-style: $h6_font_style;
+	font-weight: $h6_font_weight;
+	font-size: $h6_font_size{px};
+	line-height: $h6_line_height;
+	font-family: @font_family( $h6_font_family );
+}
+
+/*List*/
+.entry-content ol >li:before,
+.site-main ol >li:before,
+.entry-content ul:not([class]) > li:before,
+.site-main ul:not([class]) > li:before {
+	color: $regular_accent_color_1;
+}
+
+/* Page preloader */
+.page-preloader {
+	border-top-color: $regular_accent_color_1;
+	border-right-color: $regular_accent_color_1;
+}
+
+.preloader .slice {
+	border-left-color: $regular_accent_color_1;
+}
+
+.rectangle {
+	border-color: $regular_accent_color_1;
+}

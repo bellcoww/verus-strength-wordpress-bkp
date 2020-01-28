@@ -1,0 +1,154 @@
+.invert .widget ul li a {
+	color: $invert_link_color;
+}
+.invert .widget ul li.current-menu-item a,
+.invert .widget ul li a:hover {
+	color: @alpha($invert_link_color, 40%);
+}
+
+/* #Widget Calendar */
+.widget_calendar caption {
+	font-style: $h6_font_style;
+	font-weight: $h6_font_weight;
+	font-size: @font_size($h6_font_size, multiple, ceil, 1)px;
+	line-height: $h6_line_height;
+	font-family: $h6_font_family;
+	letter-spacing: $h6_letter_spacing{px};
+	text-align: $h6_text_align;
+	color: $regular_h6_color;
+}
+.invert .widget_calendar caption {
+	color: $invert_h6_color;
+}
+.widget_calendar thead th,
+.widget_calendar table td#today {
+	color: $regular_accent_color_1;
+}
+.widget_calendar tbody td:not(.pad) {
+	background-color: @alpha($regular_accent_color_2, 10%);
+	/*color: $regular_text_color;*/
+}
+/*.invert .widget_calendar tbody td:not(.pad) {*/
+	/*background-color: @alpha($regular_accent_color_2, 25%);*/
+	/*color: $regular_text_color;*/
+/*}*/
+.widget_calendar tbody td a {
+	border: 1px solid $regular_accent_color_3;
+	background-color: $invert_accent_color_1;
+	color: $regular_text_color;
+}
+
+.widget_calendar tbody td a:hover {
+	background-color: $regular_accent_color_1;
+	color: $invert_text_color;
+	border-color: $regular_accent_color_1;
+}
+
+/* #Widget Tag Cloud */
+.tagcloud a {
+	 color: $invert_accent_color_1;
+	 background: $regular_accent_color_1;
+ }
+.tagcloud a:hover {
+	color: $regular_accent_color_2;
+	background: $regular_link_hover_color;
+}
+.invert .tagcloud a {
+	color: $invert_accent_color_1;
+	background: $regular_accent_color_1;
+}
+.invert .tagcloud a:hover {
+	color: $regular_h1_color;
+	background: $invert_accent_color_1;
+}
+
+/* #Widget Recent Posts - Comments, Archive */
+.widget.widget_recent_entries ul li a,
+.elementor-widget.elementor-widget-wp-widget-recent-posts ul li a {
+	color:  $regular_link_color;
+}
+.widget.widget_recent_entries ul li a:hover,
+.elementor-widget.elementor-widget-wp-widget-recent-posts ul li a:hover {
+	color: $regular_link_hover_color;
+}
+.widget_recent_entries ul li .post-date,
+.elementor-widget.elementor-widget-wp-widget-recent-posts ul li .post-date {
+	color: @darken($regular_accent_color_2, 15%);
+}
+
+/* invert color */
+.invert .widget_recent_entries ul li a, .invert .widget_recent_comments ul li>a{
+	color: $invert_link_hover_color;
+}
+.invert .widget_recent_entries ul li a:hover, .invert .widget_recent_comments ul li>a:hover{
+	color: $invert_link_color;
+}
+.invert .widget_recent_entries ul li .post-date::before{
+	color: @alpha($regular_accent_color_1, 30);
+}
+
+.sidebar .widget,
+.elementor-widget {
+	border-color: $regular_accent_color_1;
+}
+
+.widget ul li a,
+.elementor-widget ul li a {
+	color: $regular_text_color;
+}
+
+.about-author,
+.widget-subscribe {
+	background-color: @darken($regular_text_color, 15);
+}
+
+.widget-about-author .btn.btn-primary {
+	 background-color: $regular_accent_color_1;
+	 color: $invert_text_color;
+}
+
+.widget-about-author .btn.btn-primary:hover {
+	background-color: $invert_accent_color_1;
+	color: $regular_text_color;
+}
+
+.widget ul li a:hover,
+.elementor-widget ul li a:hover {
+	color: $regular_accent_color_1;
+}
+
+.widget ul li a:before,
+.elementor-widget ul li a:before {
+	background-color: $regular_accent_color_2;
+}
+
+.widget ul li a:hover:before,
+.elementor-widget ul li a:hover:before {
+	background-color: $regular_accent_color_1;
+}
+
+/* #Search */
+.widget_search .search-form__submit {
+	background-color: $invert_accent_color_2;
+}
+.widget_search .search-form__submit:hover {
+	background-color: $regular_accent_color_1;
+}
+.widget_search .search-form__field::-webkit-input-placeholder { 
+	color: $regular_text_color;
+}
+.widget_search .search-form__field::-moz-placeholder {
+	color: $regular_text_color;
+}
+.widget_search .search-form__field:-ms-input-placeholder {
+	color: $regular_text_color;
+}
+.widget_search .search-form__field:-moz-placeholder {
+	color: $regular_text_color;
+}
+
+.invert .widget_archive select,
+.invert .widget_categories select,
+.invert .widget_text select {
+	background: @darken($regular_text_color, 50);
+}

@@ -1,0 +1,24 @@
+.widget-about {
+	&__logo-img {
+		vertical-align: top;
+	}
+	&__content {
+		margin-top: 23px;
+	}
+	&__tagline {
+		margin: 5px 0 0;
+		@include font-size(.75);
+	}
+	&__social {
+		margin-top: 15px;
+		.menu-item {
+			a,
+			a:hover {
+				&,
+				&:before {
+					background: none;
+				}
+			}
+		}
+	}
+}

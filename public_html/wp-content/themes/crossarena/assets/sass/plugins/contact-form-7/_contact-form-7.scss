@@ -1,0 +1,154 @@
+.wpcf7 {
+	input,
+	select,
+	textarea {
+		padding: 0 0 5px;
+		background: none;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	}
+	.wpcf7-form-control-wrap {
+		position: relative;
+		display: block;
+		input {
+			width: 100%;
+		}
+	}
+	.wpcf7-not-valid {
+		border-color: $color__not-valid;
+	}
+	.wpcf7-not-valid-tip {
+		color: $color__not-valid;
+		font-style: italic;
+		@include font-size(.75);
+		position: absolute;
+		right: 5px;
+	}
+	.wpcf7-validation-errors,
+	.wpcf7-mail-sent-ng,
+	.wpcf7-mail-sent-ok {
+		margin: 1.5em 0;
+		padding: 5px 15px;
+		border: none;
+		@include font-size(.875);
+		@include border-radius;
+		font-style: italic;
+		color: $color__white;
+	}
+	.wpcf7-validation-errors,
+	.wpcf7-mail-sent-ng {
+		background: $color__not-valid;
+	}
+	.wpcf7-mail-sent-ok {
+		background: $color__valid;
+	}
+	.site & .ajax-loader {
+		position: relative;
+		top: 20px;
+		margin: 0 10px;
+		padding: 10px;
+		border-radius: 50%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: $color__white;
+	}
+	&-form {
+		p {
+			margin-bottom: 12px;
+			position: relative;
+			i {
+				pointer-events: none;
+				font-size: 16px;
+				position: absolute;
+				top: 5px;
+				right: 17px;
+				z-index: 1;
+			}
+			.footer-area-wrap & {
+				margin-bottofmargin-topm: 10px;
+			}
+		}
+		label {
+			display: inline-block;
+			margin-bottom: 14px;
+		}
+	}
+	.align-center & input[type='submit'] {
+		margin-left: 36px;
+	}
+	input[type='submit'],
+	input[type='reset'] {
+		vertical-align: middle;
+		margin-top: 25px;
+		padding: $button__indents_large;
+	}
+	input[type='radio'],
+	input[type='checkbox'] {
+		display: inline-block;
+		width: auto;
+		margin-right: 20px;
+		&:last-child {
+			margin-left: 5px;
+
+		}
+	}
+	select {
+		width: 100%;
+	}
+	input[type="date"]::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		display: none;
+	}
+	input[type="date"]::-webkit-clear-button {
+		display: none;
+	}
+	input[type="date"]::-webkit-calendar-picker-indicator {
+		opacity: 0;
+	}
+	.box-input {
+		p {
+			margin-bottom: 6px;
+			margin-top: 5px;
+		}
+		input {
+			padding: 10px 20px 14px;
+			@include font-size(16/16);
+			border: 1px solid $color__border-input;
+			.invert & {
+				color: $color__white;
+				border: none;
+				background-color: rgba($color__white, .15);
+			}
+		}
+		.invert & {
+			input[type='submit'] {
+				padding: 16px 25px 15px;
+				@include font-size(12/16);
+			}
+		}
+	}
+}
+
+.site .wpcf7 {
+	.get-news-form,
+	.medical-form {
+		.ajax-loader {
+			top: 13px;
+		}
+	}
+	.main-form-2 {
+		textarea {
+			height: 92px;
+			min-height: 92px;
+		}
+	}
+}
+
+div.wpcf7 .ajax-loader {
+	margin: 0 10px;
+	border-radius: 30px;
+	background-color: white;
+	opacity: .7;
+	background-image: url('assets/images/ajax-loader.gif');
+}

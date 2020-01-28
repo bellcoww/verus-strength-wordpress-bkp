@@ -1,0 +1,20 @@
+.widget-fpblock__item-cats a {
+	color: $invert_link_hover_color;
+}
+.widget-fpblock__item-cats a:hover {
+	color: $invert_link_color;
+}
+
+@media (min-width: 992px) {
+	.full-width-header-area .widget-fpblock__item-featured .widget-fpblock__item-title,
+	.after-content-full-width-area .widget-fpblock__item-featured .widget-fpblock__item-title,
+	.before-content-area .widget-fpblock__item-featured .widget-fpblock__item-title,
+	.after-content-area .widget-fpblock__item-featured .widget-fpblock__item-title{
+		font-style: $h3_font_style;
+		font-weight: $h3_font_weight;
+		font-size: $h3_font_size{px};
+		line-height: $h3_line_height;
+		font-family: @font_family( $h3_font_family );
+		letter-spacing: $h3_letter_spacing{em};
+	}
+}
